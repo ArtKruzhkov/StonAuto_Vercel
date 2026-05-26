@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ston Auto | Window Tint</title>
+    <title>Ston Auto | About Us</title>
     <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png" />
     <link rel="icon" type="image/x-icon" href="/img/favicon.ico" />
@@ -16,25 +16,25 @@
       href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
       rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="css/output.css" />
+    <link rel="stylesheet" href="/css/output.css" />
     <script src="https://unpkg.com/lucide@latest"></script>
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
-    <script src="js/main.js" defer></script>
+    <script src="/js/main.js" defer></script>
   </head>
   <body class="antialiased selection:bg-[#0184FF] selection:text-black">
     <!-- Navigation -->
     <nav id="navbar" class="fixed w-full z-50 transition-all duration-500 py-3 px-6 lg:px-12">
       <div class="max-w-7xl mx-auto flex justify-between items-center">
-        <a href="index.html" class="inline-block">
+        <a href="/" class="inline-block">
           <img
-            src="img/ston_logo.webp"
+            src="/img/ston_logo.webp"
             alt="ston-logo"
             class="h-12 md:h-14 w-auto object-contain" />
         </a>
 
         <div class="hidden lg:flex items-center gap-3">
-          <a href="/index.html" class="nav-link">Home</a>
+          <a href="/" class="nav-link">Home</a>
           <div class="relative group">
             <button class="nav-link flex items-center gap-1 group-hover:!text-[#0184FF]">
               Services
@@ -44,17 +44,17 @@
             <div
               class="absolute left-0 top-full opacity-0 invisible glass rounded-xl px-4 py-4 group-hover:opacity-100 group-hover:visible transition-all duration-300 w-max">
               <div class="flex flex-col gap-2 text-xs tracking-wider uppercase text-[#9ca3af]">
-                <a href="paintprotectionfilm.html" class="dropdown-link">Paint Protection</a>
-                <a href="vinyl-wraps.html" class="dropdown-link">Vinyl Wraps</a>
-                <a href="window-tint.html" class="dropdown-link">Window Tint</a>
-                <a href="ceramic-coating.html" class="dropdown-link">Ceramic Coating</a>
-                <a href="powder-coating.html" class="dropdown-link">Powder Coating</a>
-                <a href="detailing.html" class="dropdown-link">Detailing</a>
+                <a href="/ppf" class="dropdown-link">Paint Protection</a>
+                <a href="/vinyl-wraps" class="dropdown-link">Vinyl Wraps</a>
+                <a href="/window-tint" class="dropdown-link">Window Tint</a>
+                <a href="/ceramic-coating" class="dropdown-link">Ceramic Coating</a>
+                <a href="/powder-coating" class="dropdown-link">Powder Coating</a>
+                <a href="/detailing" class="dropdown-link">Detailing</a>
               </div>
             </div>
           </div>
-          <a href="about.html" class="nav-link">About Us</a>
-          <a href="gallery.html" class="nav-link">Gallery</a>
+          <a href="/about" class="nav-link">About Us</a>
+          <a href="/gallery" class="nav-link">Gallery</a>
           <a href="#contact" class="nav-link">Contact</a>
         </div>
 
@@ -66,25 +66,23 @@
       <!-- Mobile Menu -->
       <div id="mobile-menu" class="hidden lg:hidden absolute top-full left-0 w-full mt-4 px-6">
         <div class="glass rounded-2xl p-6 flex flex-col gap-4">
-          <a href="index.html" class="text-sm tracking-wider text-gray-300 py-2">Home</a>
+          <a href="/" class="text-sm tracking-wider text-gray-300 py-2">Home</a>
           <a href="#services" class="text-sm tracking-wider text-gray-300 py-2">Services</a>
-          <a href="about.html" class="text-sm tracking-wider text-gray-300 py-2">About Us</a>
-          <a href="gallery.html" class="text-sm tracking-wider text-gray-300 py-2">Gallery</a>
+          <a href="/about" class="text-sm tracking-wider text-gray-300 py-2">About Us</a>
+          <a href="/gallery" class="text-sm tracking-wider text-gray-300 py-2">Gallery</a>
           <a href="#contact" class="text-sm tracking-wider text-gray-300 py-2">Contact</a>
         </div>
       </div>
     </nav>
 
     <!-- Hero Section -->
-    <section
-      id="window-tint"
-      class="relative h-[68vh] flex items-center justify-center overflow-hidden">
+    <section id="about" class="relative h-[68vh] flex items-center justify-center overflow-hidden">
       <!-- Background -->
-      <div class="absolute inset-0 z-0 overflow-hidden">
+      <div class="absolute inset-0 z-0">
         <img
-          src="img/pages/windowtint/windowtint-hero-img.webp"
-          alt="windowtint-hero-img"
-          class="parallax-img windowtint-hero" />
+          src="/img/pages/about/about-hero-img.webp"
+          alt="hero-img"
+          class="parallax-img w-full h-full object-cover object-[80%_center] sm:object-center" />
         <div class="absolute inset-0 hero-gradient"></div>
       </div>
 
@@ -92,249 +90,99 @@
       <div class="relative z-10 text-center px-6 max-w-7xl mx-auto">
         <h1
           class="font-display font-bold text-5xl md:text-6xl lg:text-7xl leading-none mb-6 tracking-tight">
-          <span class="block uppercase">Ceramic Window Tint</span>
+          <span class="block uppercase">About Us</span>
         </h1>
 
-        <p
+        <h2
           class="text-white text-sm md:text-base tracking-[0.2em] uppercase mb-6 max-w-6xl mx-auto leading-relaxed">
-          Premium Auto Window Tinting for Heat Rejection, UV Protection, and Style
-        </p>
+          Welcome to Ston Auto Restyling, where automotive passion meets precision craftsmanship.
+        </h2>
       </div>
     </section>
 
-    <!-- Window Tint Section -->
-    <section class="relative py-12 md:pt-32 md:pb-16 px-6 overflow-hidden" id="window-tint">
-      <div class="max-w-7xl mx-auto">
-        <!-- Label -->
-        <div class="flex items-center gap-3 mb-4">
-          <div class="w-8 h-px bg-gray-600"></div>
-          <span class="text-xs tracking-[0.4em] uppercase text-gray-500"> Window Tint </span>
-        </div>
-
-        <!-- Title -->
+    <!-- About Page Section -->
+    <section class="pt-12 md:pt-32 md:pb-4 px-6 bg-black text-white">
+      <!-- Info -->
+      <div class="max-w-7xl mx-auto mb-12">
         <h2 class="font-display font-bold text-4xl md:text-6xl leading-tight mb-6">
-          What is Window Tint?
+          Premium Automotive Protection & Restyling
         </h2>
 
-        <!-- Description -->
         <p class="text-gray-400 leading-relaxed mb-6 text-sm md:text-base max-w-5xl">
-          Window tint is a high-performance film applied to your vehicle’s glass to enhance comfort,
-          privacy, and protection. Modern ceramic tint technology blocks heat, reduces glare, and
-          filters harmful UV rays without compromising visibility or clarity.
+          STON Auto Restyling is your destination for premium automotive protection and bespoke
+          vehicle enhancement in Santa Monica. Founded in 2024, we are driven by a clear vision — to
+          redefine the standard of luxury automotive care through precision, innovation, and
+          uncompromising attention to detail.<br /><br />
+
+          We don’t just modify vehicles — we curate automotive experiences. Every project is
+          approached with a balance of technical expertise and refined aesthetic vision, ensuring
+          results that are both visually striking and built to last.<br /><br />
+
+          Our team focuses on precision installation techniques, premium material sourcing, and
+          concours-level detailing to deliver finishes that exceed expectations. From protective
+          solutions to full restyling transformations, every vehicle that enters our space leaves
+          elevated to its highest potential.<br /><br />
+
+          At STON Auto, craftsmanship is not a service — it’s our standard.
         </p>
-
-        <p class="text-gray-500 text-sm mb-12 max-w-7xl">
-          We install premium ceramic films from
-          <span class="text-white">3M</span>, <span class="text-white">Avery Dennison</span>, and
-          <span class="text-white">STEK</span>, delivering industry-leading heat rejection, optical
-          clarity, and long-term performance.
-        </p>
-
-        <!-- Features -->
-        <div class="grid md:grid-cols-3 gap-6">
-          <div class="ppf-card">
-            <div class="ppf-title-container">
-              <div class="ppf-dot"></div>
-              <h3 class="ppf-title">Heat Rejection</h3>
-            </div>
-            <p class="ppf-text">
-              Advanced ceramic technology blocks infrared heat, keeping your interior cooler and
-              more comfortable.
-            </p>
-          </div>
-
-          <div class="ppf-card">
-            <div class="ppf-title-container">
-              <div class="ppf-dot"></div>
-              <h3 class="ppf-title">UV Protection</h3>
-            </div>
-            <p class="ppf-text">
-              Protects against harmful UV rays, helping prevent interior fading and protecting your
-              skin.
-            </p>
-          </div>
-
-          <div class="ppf-card">
-            <div class="ppf-title-container">
-              <div class="ppf-dot"></div>
-              <h3 class="ppf-title">Privacy & Style</h3>
-            </div>
-            <p class="ppf-text">
-              Enhances your vehicle’s appearance while adding privacy without sacrificing
-              visibility.
-            </p>
-          </div>
-        </div>
       </div>
-    </section>
 
-    <!-- Window Tint Details Section -->
-    <section class="pt-10 pb-12 sm:pb-20 px-6 relative">
-      <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
-        <!-- LEFT: Image -->
-        <div class="relative rounded-2xl overflow-hidden">
+      <!-- Image -->
+      <div class="relative max-w-7xl mx-auto overflow-hidden rounded-2xl group">
+        <img
+          src="/img/pages/about/about-section-img.webp"
+          alt="ston-auto"
+          class="w-full h-auto sm:h-[400px] lg:h-[500px] object-cover" />
+
+        <!-- Overlay -->
+        <div
+          class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+      </div>
+
+      <!-- Quality Section -->
+      <div class="max-w-7xl mx-auto mt-6 mb-6 sm:mt-12 sm:mb-12">
+        <h3 class="font-display font-bold text-2xl md:text-3xl mb-3 sm:mb-6">
+          Driven by Quality. Defined by Standards.
+        </h3>
+
+        <p class="text-gray-400 leading-relaxed mb-6 text-sm md:text-base max-w-5xl">
+          At STON Auto Restyling, quality is not an upgrade — it’s the baseline. Every vehicle that
+          enters our space is treated with uncompromising attention, discipline, and respect for the
+          craft.<br /><br />
+
+          We operate with a process-driven approach, ensuring consistency, precision, and flawless
+          execution at every stage. From initial preparation to final delivery, each detail is
+          carefully refined to meet the expectations of clients who value excellence.<br /><br />
+
+          Our reputation is built on trust, consistency, and results that speak for themselves —
+          because true quality is seen, felt, and experienced in every finished vehicle.
+        </p>
+      </div>
+
+      <!-- Images Grid -->
+      <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-6">
+        <!-- Image 1 -->
+        <div class="relative overflow-hidden rounded-2xl group">
           <img
-            src="img/pages/windowtint/tint-levels.webp"
-            alt="tint-levels"
-            class="w-full h-auto sm:h-[350px] md:h-[450px] lg:h-[350px] object-cover" />
+            src="/img/pages/about/about-quality-img1.webp"
+            alt="ston-auto-work-1"
+            class="w-full h-[280px] lg:h-[380px] object-cover" />
           <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
         </div>
 
-        <!-- RIGHT: Content -->
-        <div class="max-w-xl">
-          <!-- Label -->
-          <div class="text-[10px] tracking-[0.4em] uppercase text-gray-400 mb-3">
-            Visible Light Transmission (VLT)
-          </div>
-
-          <!-- Title -->
-          <h2 class="font-display font-bold text-4xl md:text-5xl mb-6">Tint Levels</h2>
-
-          <!-- Text -->
-          <p class="text-gray-400 text-sm md:text-base leading-relaxed mb-6">
-            Visible Light Transmission (VLT) refers to the percentage of light that passes through
-            your vehicle’s windows. It is the key factor that determines how dark or light your tint
-            appears.
-          </p>
-
-          <p class="text-gray-500 text-sm leading-relaxed mb-6">
-            Lower VLT percentages, such as 5% or 15%, allow very little light in, creating a darker,
-            more private look. Higher percentages like 35% or 50% let in more natural light,
-            offering a cleaner and more subtle appearance.
-          </p>
-
-          <p class="text-gray-500 text-sm leading-relaxed">
-            Choosing the right VLT level depends on your preference for privacy, visibility, and
-            overall style. From deep, aggressive shades to light, factory-like finishes, each option
-            delivers a distinct look and driving experience.
-          </p>
-        </div>
-      </div>
-
-      <div class="pt-12 lg:pt-20 max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
-        <!-- LEFT: Content -->
-        <div class="max-w-xl">
-          <!-- Label -->
-          <div class="text-[10px] tracking-[0.4em] uppercase text-gray-400 mb-3">
-            Professional Installation
-          </div>
-
-          <!-- Title -->
-          <h2 class="font-display font-bold text-4xl md:text-5xl mb-6">Flawlessly Applied Tint</h2>
-
-          <!-- Text -->
-          <p class="text-gray-400 text-sm md:text-base leading-relaxed mb-6">
-            We install advanced window tint films engineered to deliver superior heat rejection,
-            optical clarity, and long-term durability. Whether you're looking for a subtle
-            enhancement or maximum privacy, modern tint technology offers a tailored solution for
-            every vehicle.
-          </p>
-
-          <p class="text-gray-500 text-sm leading-relaxed mb-8">
-            Every installation is performed with precision and attention to detail. Our team custom
-            cuts each film and meticulously finishes every edge to ensure a seamless, factory-like
-            appearance — free of bubbles, gaps, or imperfections.
-          </p>
-
-          <!-- Features -->
-          <div class="space-y-4">
-            <div class="flex items-start gap-3">
-              <div class="w-1.5 h-1.5 bg-[#0184FF] rounded-full mt-2"></div>
-              <div>
-                <span class="text-sm text-white">Multiple Tint Levels</span>
-                <p class="text-xs text-gray-400">
-                  Options ranging from 5% to 70% VLT for the perfect balance of privacy and
-                  visibility.
-                </p>
-              </div>
-            </div>
-
-            <div class="flex items-start gap-3">
-              <div class="w-1.5 h-1.5 bg-[#0184FF] rounded-full mt-2"></div>
-              <div>
-                <span class="text-sm text-white">Shaved Edges</span>
-                <p class="text-xs text-gray-400">
-                  Precisely trimmed edges for a clean, gap-free finish that replicates factory
-                  glass.
-                </p>
-              </div>
-            </div>
-
-            <div class="flex items-start gap-3">
-              <div class="w-1.5 h-1.5 bg-[#0184FF] rounded-full mt-2"></div>
-              <div>
-                <span class="text-sm text-white">Flawless Installation</span>
-                <p class="text-xs text-gray-400">
-                  Bubble-free application with perfect alignment and long-lasting performance.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- RIGHT: Image -->
-        <div class="relative h-[350px] lg:h-[550px] rounded-2xl overflow-hidden group">
-          <img src="img/services/window-service.webp" class="w-full h-full object-cover" />
-
-          <div
-            class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
-
-          <!-- Optional overlay text -->
-          <div class="absolute bottom-6 left-6 right-6">
-            <div class="font-display font-bold text-lg mb-2">Precision in Every Detail</div>
-
-            <p class="text-gray-300 text-xs leading-relaxed max-w-sm">
-              Each window is carefully prepped, aligned, and installed by hand to ensure a flawless,
-              bubble-free finish with perfect edge definition.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="py-10 px-4">
-      <div
-        class="max-w-3xl mx-auto rounded-3xl p-6 px-10 pb-10 pt-9 text-center relative bg-white/5 backdrop-blur-xl border border-white/10 shadow-[0_0_60px_rgba(0,0,0,0.3)]">
-        <!-- glow -->
-        <div
-          class="absolute inset-0 bg-gradient-to-br from-cyan-500/5 to-purple-500/5 rounded-3xl"></div>
-
-        <div class="relative z-10">
-          <!-- logo -->
-          <div class="flex items-center justify-center mb-4">
-            <img src="img/ston_logo.webp" alt="ston-logo" class="w-auto h-14 object-contain" />
-          </div>
-
-          <!-- text -->
-          <h2 class="font-display font-bold text-xl md:text-3xl mb-2">
-            Elevate Your Vehicle’s Appearance
-          </h2>
-          <p class="text-gray-400 text-sm mb-6 max-w-md mx-auto">
-            Schedule your consultation today.
-          </p>
-
-          <!-- buttons -->
-          <div class="flex flex-col sm:flex-row gap-3 justify-center">
-            <a
-              href="tel:+14243336965"
-              class="px-6 py-3 rounded-full bg-white text-black text-sm font-medium tracking-wide hover:opacity-90 transition flex items-center justify-center gap-2">
-              <i data-lucide="phone" class="w-4 h-4"></i>
-              (424) 333-6965
-            </a>
-
-            <button
-              onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })"
-              class="px-6 py-3 rounded-full text-sm font-medium tracking-wide border border-white/10 hover:bg-white/5 transition">
-              Book Online
-            </button>
-          </div>
+        <!-- Image 2 -->
+        <div class="relative overflow-hidden rounded-2xl group">
+          <img
+            src="/img/pages/about/about-quality-img2.webp"
+            alt="ston-auto-work-2"
+            class="w-full h-[280px] lg:h-[380px] object-cover" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
         </div>
       </div>
     </section>
 
     <!-- Services Bento Grid -->
-    <section id="services" class="py-12 sm:py-20 px-6">
+    <section id="services" class="py-20 px-6">
       <div class="max-w-7xl mx-auto">
         <div class="mb-16">
           <div>
@@ -351,10 +199,10 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <!-- Card -->
           <a
-            href="paintprotectionfilm.html"
+            href="/ppf"
             class="service-card relative rounded-3xl overflow-hidden group cursor-pointer h-[300px] sm:h-[400px] md:h-[300px]">
             <img
-              src="img/services/ppf-service.webp"
+              src="/img/services/ppf-service.webp"
               alt="Paint Protection"
               class="service-img absolute inset-0 w-full h-full object-cover" />
             <div
@@ -369,10 +217,10 @@
 
           <!-- Card -->
           <a
-            href="vinyl-wraps.html"
+            href="/vinyl-wraps"
             class="service-card relative rounded-3xl overflow-hidden group cursor-pointer h-[300px] sm:h-[400px] md:h-[300px]">
             <img
-              src="img/services/wrap-service.webp"
+              src="/img/services/wrap-service.webp"
               alt="Vinyl Wraps"
               class="service-img absolute inset-0 w-full h-full object-cover vinylwrap-img" />
             <div
@@ -387,10 +235,10 @@
 
           <!-- Card -->
           <a
-            href="window-tint.html"
+            href="/window-tint"
             class="service-card relative rounded-3xl overflow-hidden group cursor-pointer h-[300px] sm:h-[400px] md:h-[300px]">
             <img
-              src="img/services/window-service.webp"
+              src="/img/services/window-service.webp"
               alt="Ceramic Tint"
               class="service-img absolute inset-0 w-full h-full object-cover" />
             <div
@@ -405,10 +253,10 @@
 
           <!-- Card -->
           <a
-            href="ceramic-coating.html"
+            href="/ceramic-coating"
             class="service-card relative rounded-3xl overflow-hidden group cursor-pointer h-[300px] sm:h-[400px] md:h-[300px]">
             <img
-              src="img/services/ceramic-service.webp"
+              src="/img/services/ceramic-service.webp"
               alt="Ceramic Coating"
               class="service-img absolute inset-0 w-full h-full object-cover" />
             <div
@@ -424,10 +272,10 @@
 
           <!-- Card -->
           <a
-            href="powder-coating.html"
+            href="/powder-coating"
             class="service-card relative rounded-3xl overflow-hidden group cursor-pointer h-[300px] sm:h-[400px] md:h-[300px]">
             <img
-              src="img/services/powder-service.webp"
+              src="/img/services/powder-service.webp"
               alt="Powder coating"
               class="service-img absolute inset-0 w-full h-full object-cover" />
             <div
@@ -442,10 +290,10 @@
 
           <!-- Card -->
           <a
-            href="detailing.html"
+            href="/detailing"
             class="service-card relative rounded-3xl overflow-hidden group cursor-pointer h-[300px] sm:h-[400px] md:h-[300px]">
             <img
-              src="img/services/detailing-service.webp"
+              src="/img/services/detailing-service.webp"
               alt="Detailing"
               class="service-img absolute inset-0 w-full h-full object-cover" />
             <div
@@ -600,7 +448,7 @@
           </div>
 
           <a
-            href="gallery.html"
+            href="/gallery"
             class="text-sm text-white hover:text-[#0184FF] transition-colors inline-block gap-2 px-4 py-2">
             View All Projects
           </a>
@@ -611,42 +459,42 @@
             <!-- Slide -->
             <div class="swiper-slide">
               <div class="group relative rounded-2xl overflow-hidden cursor-pointer">
-                <img src="img/gallery/gal1.webp" class="slide-image" />
+                <img src="/img/gallery/gal1.webp" class="slide-image" />
               </div>
             </div>
 
             <!-- Slide -->
             <div class="swiper-slide">
               <div class="group relative rounded-2xl overflow-hidden cursor-pointer">
-                <img src="img/gallery/gal2.webp" class="slide-image" />
+                <img src="/img/gallery/gal2.webp" class="slide-image" />
               </div>
             </div>
 
             <!-- Slide -->
             <div class="swiper-slide">
               <div class="group relative rounded-2xl overflow-hidden cursor-pointer">
-                <img src="img/gallery/gal3.webp" class="slide-image" />
+                <img src="/img/gallery/gal3.webp" class="slide-image" />
               </div>
             </div>
 
             <!-- Slide -->
             <div class="swiper-slide">
               <div class="group relative rounded-2xl overflow-hidden cursor-pointer">
-                <img src="img/gallery/gal4.webp" class="slide-image" />
+                <img src="/img/gallery/gal4.webp" class="slide-image" />
               </div>
             </div>
 
             <!-- Slide -->
             <div class="swiper-slide">
               <div class="group relative rounded-2xl overflow-hidden cursor-pointer">
-                <img src="img/gallery/gal5.webp" class="slide-image" />
+                <img src="/img/gallery/gal5.webp" class="slide-image" />
               </div>
             </div>
 
             <!-- Slide -->
             <div class="swiper-slide">
               <div class="group relative rounded-2xl overflow-hidden cursor-pointer">
-                <img src="img/gallery/gal6.webp" class="slide-image" />
+                <img src="/img/gallery/gal6.webp" class="slide-image" />
               </div>
             </div>
           </div>
@@ -831,9 +679,9 @@
       <div class="max-w-7xl mx-auto">
         <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16">
           <div class="">
-            <a href="index.html" class="inline-block mb-2">
+            <a href="/" class="inline-block mb-2">
               <img
-                src="img/ston-logo-footer.webp"
+                src="/img/ston-logo-footer.webp"
                 alt="ston-logo"
                 class="h-6 md:h-10 w-auto object-contain" />
             </a>
@@ -862,22 +710,22 @@
             <h4 class="font-display font-medium text-sm mb-5 tracking-wider">Services</h4>
             <ul class="space-y-3 text-xs text-gray-500">
               <li>
-                <a href="paintprotectionfilm.html" class="footer-link">Paint Protection</a>
+                <a href="/ppf" class="footer-link">Paint Protection</a>
               </li>
               <li>
-                <a href="vinyl-wraps.html" class="footer-link">Vinyl Wraps</a>
+                <a href="/vinyl-wraps" class="footer-link">Vinyl Wraps</a>
               </li>
               <li>
-                <a href="window-tint.html" class="footer-link">Window Tint</a>
+                <a href="/window-tint" class="footer-link">Window Tint</a>
               </li>
               <li>
-                <a href="ceramic-coating.html" class="footer-link">Ceramic Coating</a>
+                <a href="/ceramic-coating" class="footer-link">Ceramic Coating</a>
               </li>
               <li>
-                <a href="powder-coating.html" class="footer-link">Powder Coating</a>
+                <a href="/powder-coating" class="footer-link">Powder Coating</a>
               </li>
               <li>
-                <a href="detailing.html" class="footer-link">Detailing</a>
+                <a href="/detailing" class="footer-link">Detailing</a>
               </li>
             </ul>
           </div>
@@ -886,10 +734,10 @@
             <h4 class="font-display font-medium text-sm mb-5 tracking-wider">Company</h4>
             <ul class="space-y-3 text-xs text-gray-500">
               <li>
-                <a href="about.html" class="footer-link">About Us</a>
+                <a href="/about" class="footer-link">About Us</a>
               </li>
               <li>
-                <a href="gallery.html" class="footer-link">Gallery</a>
+                <a href="/gallery" class="footer-link">Gallery</a>
               </li>
             </ul>
           </div>
@@ -916,10 +764,10 @@
             © 2026 Ston Auto Studio. All Rights Reserved.
           </div>
           <div class="flex gap-6 text-[10px] text-gray-600">
-            <a href="privacy-policy.html" class="hover:text-gray-400 transition-colors"
+            <a href="/privacy-policy" class="hover:text-gray-400 transition-colors"
               >Privacy Policy</a
             >
-            <a href="terms-of-service.html" class="hover:text-gray-400 transition-colors"
+            <a href="/terms-of-service" class="hover:text-gray-400 transition-colors"
               >Terms of Service</a
             >
           </div>

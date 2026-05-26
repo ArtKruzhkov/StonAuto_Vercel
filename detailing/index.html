@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ston Auto | Paint Protection Film</title>
+    <title>Ston Auto | Detailing</title>
     <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png" />
     <link rel="icon" type="image/x-icon" href="/img/favicon.ico" />
@@ -16,25 +16,25 @@
       href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
       rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="css/output.css" />
+    <link rel="stylesheet" href="/css/output.css" />
     <script src="https://unpkg.com/lucide@latest"></script>
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
-    <script src="js/main.js" defer></script>
+    <script src="/js/main.js" defer></script>
   </head>
   <body class="antialiased selection:bg-[#0184FF] selection:text-black">
     <!-- Navigation -->
     <nav id="navbar" class="fixed w-full z-50 transition-all duration-500 py-3 px-6 lg:px-12">
       <div class="max-w-7xl mx-auto flex justify-between items-center">
-        <a href="index.html" class="inline-block">
+        <a href="/" class="inline-block">
           <img
-            src="img/ston_logo.webp"
+            src="/img/ston_logo.webp"
             alt="ston-logo"
             class="h-12 md:h-14 w-auto object-contain" />
         </a>
 
         <div class="hidden lg:flex items-center gap-3">
-          <a href="/index.html" class="nav-link">Home</a>
+          <a href="/" class="nav-link">Home</a>
           <div class="relative group">
             <button class="nav-link flex items-center gap-1 group-hover:!text-[#0184FF]">
               Services
@@ -44,17 +44,17 @@
             <div
               class="absolute left-0 top-full opacity-0 invisible glass rounded-xl px-4 py-4 group-hover:opacity-100 group-hover:visible transition-all duration-300 w-max">
               <div class="flex flex-col gap-2 text-xs tracking-wider uppercase text-[#9ca3af]">
-                <a href="paintprotectionfilm.html" class="dropdown-link">Paint Protection</a>
-                <a href="vinyl-wraps.html" class="dropdown-link">Vinyl Wraps</a>
-                <a href="window-tint.html" class="dropdown-link">Window Tint</a>
-                <a href="ceramic-coating.html" class="dropdown-link">Ceramic Coating</a>
-                <a href="powder-coating.html" class="dropdown-link">Powder Coating</a>
-                <a href="detailing.html" class="dropdown-link">Detailing</a>
+                <a href="/ppf" class="dropdown-link">Paint Protection</a>
+                <a href="/vinyl-wraps" class="dropdown-link">Vinyl Wraps</a>
+                <a href="/window-tint" class="dropdown-link">Window Tint</a>
+                <a href="/ceramic-coating" class="dropdown-link">Ceramic Coating</a>
+                <a href="/powder-coating" class="dropdown-link">Powder Coating</a>
+                <a href="/detailing" class="dropdown-link">Detailing</a>
               </div>
             </div>
           </div>
-          <a href="about.html" class="nav-link">About Us</a>
-          <a href="gallery.html" class="nav-link">Gallery</a>
+          <a href="/about" class="nav-link">About Us</a>
+          <a href="/gallery" class="nav-link">Gallery</a>
           <a href="#contact" class="nav-link">Contact</a>
         </div>
 
@@ -66,23 +66,26 @@
       <!-- Mobile Menu -->
       <div id="mobile-menu" class="hidden lg:hidden absolute top-full left-0 w-full mt-4 px-6">
         <div class="glass rounded-2xl p-6 flex flex-col gap-4">
-          <a href="index.html" class="text-sm tracking-wider text-gray-300 py-2">Home</a>
+          <a href="/" class="text-sm tracking-wider text-gray-300 py-2">Home</a>
           <a href="#services" class="text-sm tracking-wider text-gray-300 py-2">Services</a>
-          <a href="about.html" class="text-sm tracking-wider text-gray-300 py-2">About Us</a>
-          <a href="gallery.html" class="text-sm tracking-wider text-gray-300 py-2">Gallery</a>
+          <a href="/about" class="text-sm tracking-wider text-gray-300 py-2">About Us</a>
+          <a href="/gallery" class="text-sm tracking-wider text-gray-300 py-2">Gallery</a>
           <a href="#contact" class="text-sm tracking-wider text-gray-300 py-2">Contact</a>
         </div>
       </div>
     </nav>
 
     <!-- Hero Section -->
-    <section id="ppf" class="relative h-[68vh] flex items-center justify-center overflow-hidden">
+    <section
+      id="detailing"
+      class="relative h-[68vh] flex items-center justify-center overflow-hidden">
       <!-- Background -->
-      <div class="absolute inset-0 z-0">
+      <div class="absolute inset-0 z-0 overflow-hidden">
         <img
-          src="img/pages/ppf/ppf-img.webp"
-          alt="ppf-hero-img"
-          class="parallax-img w-full h-full object-cover" />
+          src="/img/pages/detailing/detailing-hero.webp"
+          alt="detailing-hero-img"
+          class="parallax-img w-full h-full object-cover object-[center_60%]" />
+
         <div class="absolute inset-0 hero-gradient"></div>
       </div>
 
@@ -90,59 +93,54 @@
       <div class="relative z-10 text-center px-6 max-w-7xl mx-auto">
         <h1
           class="font-display font-bold text-5xl md:text-6xl lg:text-7xl leading-none mb-6 tracking-tight">
-          <span class="block uppercase">Paint Protection Film</span>
+          <span class="block uppercase">Detailing</span>
         </h1>
 
         <p
-          class="text-white text-sm md:text-base tracking-[0.2em] uppercase mb-6 max-w-2xl mx-auto leading-relaxed">
-          Top Rated PPF instalation in Santa Monica, California
+          class="text-white text-sm md:text-base tracking-[0.2em] uppercase mb-6 max-w-6xl mx-auto leading-relaxed">
+          Complete Interior & Exterior Detailing for a Like-New Appearance
         </p>
-
-        <!-- Service Pills -->
-        <div class="flex flex-wrap justify-center gap-3 mb-12 max-w-3xl mx-auto">
-          <a href="#clear-ppf" class="service-pill">Clear PPF</a>
-          <a href="#color-ppf" class="service-pill">Color PPF</a>
-          <a href="#matte-ppf" class="service-pill">Matte PPF</a>
-        </div>
       </div>
     </section>
 
-    <!-- PPF Section -->
-    <section class="relative py-12 md:py-32 px-6 overflow-hidden" id="clear-ppf">
+    <!-- Detailing Section -->
+    <section class="relative py-12 md:pt-32 md:pb-16 px-6 overflow-hidden" id="detailing">
       <div class="max-w-7xl mx-auto">
         <!-- Label -->
         <div class="flex items-center gap-3 mb-4">
           <div class="w-8 h-px bg-gray-600"></div>
-          <span class="text-xs tracking-[0.4em] uppercase text-gray-500">
-            Paint Protection Film
-          </span>
+          <span class="text-xs tracking-[0.4em] uppercase text-gray-500"> Detailing </span>
         </div>
+
         <!-- Title -->
-        <h2 class="font-display font-bold text-4xl md:text-6xl leading-tight mb-6">What is PPF?</h2>
+        <h2 class="font-display font-bold text-4xl md:text-6xl leading-tight mb-6">
+          What is Auto Detailing?
+        </h2>
 
         <!-- Description -->
         <p class="text-gray-400 leading-relaxed mb-6 text-sm md:text-base max-w-5xl">
-          Paint Protection Film (PPF) is a virtually invisible layer of advanced thermoplastic
-          polyurethane designed to protect your vehicle’s paint from rock chips, scratches, and
-          environmental damage while preserving a flawless finish.
+          Auto detailing is a meticulous cleaning and restoration process designed to bring your
+          vehicle back to its best possible condition.<br />
+          From deep interior cleaning to exterior paint care, every surface is treated with
+          precision and attention to detail.
         </p>
 
-        <p class="text-gray-500 text-sm mb-12">
-          Installed using premium films from
-          <span class="text-white">STEK</span>, <span class="text-white">XPEL</span>, and
-          <span class="text-white">3M</span>.
+        <p class="text-gray-500 text-sm mb-12 max-w-5xl">
+          Our approach focuses on safe washing techniques, premium products, and a detail-driven
+          process that protects your vehicle while enhancing its overall appearance.
         </p>
 
         <!-- Features (cards) -->
-        <div class="grid md:grid-cols-3 gap-6">
+        <div class="grid md:grid-cols-3 gap-6 mb-16">
           <!-- Card -->
           <div class="ppf-card">
             <div class="ppf-title-container">
               <div class="ppf-dot"></div>
-              <h3 class="ppf-title">Self-Healing</h3>
+              <h3 class="ppf-title">Safe Wash Process</h3>
             </div>
             <p class="ppf-text">
-              Heat-activated technology repairs light scratches and swirl marks automatically.
+              Gentle, paint-safe methods designed to prevent scratches, swirls, and damage during
+              every stage of the wash.
             </p>
           </div>
 
@@ -150,10 +148,11 @@
           <div class="ppf-card">
             <div class="ppf-title-container">
               <div class="ppf-dot"></div>
-              <h3 class="ppf-title">Damage Resistant</h3>
+              <h3 class="ppf-title">Detail-Driven Care</h3>
             </div>
             <p class="ppf-text">
-              Multi-layer structure absorbs impacts and protects against chips and abrasions.
+              Every surface is carefully cleaned, restored, and refined to achieve a consistent,
+              high-quality finish.
             </p>
           </div>
 
@@ -161,578 +160,130 @@
           <div class="ppf-card">
             <div class="ppf-title-container">
               <div class="ppf-dot"></div>
-              <h3 class="ppf-title">Hydrophobic</h3>
+              <h3 class="ppf-title">Premium Products</h3>
             </div>
             <p class="ppf-text">
-              Repels water, dirt, and contaminants for easier cleaning and long-lasting shine.
+              We use professional-grade detailing products to ensure maximum cleanliness,
+              protection, and long-lasting results.
+            </p>
+          </div>
+        </div>
+
+        <!-- Process Section -->
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <!-- LEFT: Image -->
+          <div class="relative rounded-2xl overflow-hidden order-2 lg:order-1">
+            <img
+              src="/img/pages/detailing/detailing-steps.webp"
+              alt="detailing-process"
+              class="w-full h-auto xl:h-[400px] object-cover" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+          </div>
+
+          <!-- RIGHT: Content -->
+          <div class="max-w-xl order-1 lg:order-2">
+            <div class="text-[10px] tracking-[0.4em] uppercase text-gray-400 mb-3">
+              12-Step Detailing Process
+            </div>
+
+            <h3 class="font-display font-bold text-2xl md:text-3xl mb-6">
+              A Complete Approach to Vehicle Care
+            </h3>
+
+            <p class="text-gray-400 text-sm md:text-base leading-relaxed mb-6">
+              Our detailing service follows a structured 12-step process designed to safely clean,
+              decontaminate, and restore your vehicle from top to bottom.
+            </p>
+
+            <p class="text-gray-500 text-sm leading-relaxed">
+              From wheel cleaning and pre-wash to polishing, protection, and final finishing
+              touches, each step is performed with precision to ensure a flawless, like-new result.
             </p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- PPF Details Section -->
-    <section class="pb-12 px-6 relative">
-      <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
-        <!-- LEFT: Content -->
-        <div>
+    <!-- Detailing Process Section -->
+    <section class="pt-2 pb-12 sm:pb-20 px-6 relative">
+      <div class="max-w-7xl mx-auto">
+        <!-- TOP: Text -->
+        <div class="max-w-5xl mb-16">
+          <!-- Label -->
+          <div class="text-[10px] tracking-[0.4em] uppercase text-gray-400 mb-3">
+            Detailing Process
+          </div>
+
           <!-- Title -->
           <h2 class="font-display font-bold text-4xl md:text-5xl mb-6">
-            Built To Protect Your Car
+            A Methodical Approach to Vehicle Care
           </h2>
 
           <!-- Text -->
           <p class="text-gray-400 text-sm md:text-base leading-relaxed mb-6">
-            Paint Protection Film (PPF) is engineered with advanced multi-layer technology and
-            nano-enhanced topcoats to deliver unmatched durability, clarity, and long-term
-            protection. Unlike traditional protection methods, modern PPF eliminates the need for
-            constant waxing or aftermarket coatings.
+            Our detailing service follows a structured, multi-step process designed to safely clean,
+            restore, and enhance every part of your vehicle — both inside and out. Each stage is
+            performed using paint-safe techniques and professional-grade tools to ensure the highest
+            level of care.
           </p>
 
-          <p class="text-gray-500 text-sm mb-8">
-            We work with premium brands such as
-            <span class="text-white">STEK</span>, <span class="text-white">XPEL</span>, and
-            <span class="text-white">3M</span>, ensuring industry-leading performance and finish.
+          <p class="text-gray-500 text-sm leading-relaxed mb-6">
+            The process begins with wheels and pre-cleaning to remove heavy contaminants, followed
+            by a controlled wash using the two-bucket method to prevent scratches. A full
+            decontamination stage removes embedded particles, preparing the exterior surfaces for
+            further refinement.
           </p>
 
-          <!-- Features -->
-          <div class="space-y-4">
-            <div class="flex items-center gap-3">
-              <div class="w-1.5 h-1.5 bg-[#0184FF] rounded-full"></div>
-              <span class="text-sm text-gray-300">Hydrophobic & stain resistant surface</span>
-            </div>
+          <p class="text-gray-500 text-sm leading-relaxed mb-6">
+            Interior detailing focuses on deep cleaning and restoration of all cabin surfaces —
+            including carpets, upholstery, leather, plastics, and trim — removing dirt, stains, and
+            buildup while restoring a fresh, refined environment.
+          </p>
 
-            <div class="flex items-center gap-3">
-              <div class="w-1.5 h-1.5 bg-[#0184FF] rounded-full"></div>
-              <span class="text-sm text-gray-300">Self-healing against scratches and swirls</span>
-            </div>
-
-            <div class="flex items-center gap-3">
-              <div class="w-1.5 h-1.5 bg-[#0184FF] rounded-full"></div>
-              <span class="text-sm text-gray-300">Puncture and impact resistant structure</span>
-            </div>
-
-            <div class="flex items-center gap-3">
-              <div class="w-1.5 h-1.5 bg-[#0184FF] rounded-full"></div>
-              <span class="text-sm text-gray-300">Crystal-clear finish with zero distortion</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- RIGHT: Image block -->
-        <div class="relative h-[500px] rounded-2xl overflow-hidden group">
-          <!-- Image -->
-          <img src="img/services/ppf-service.webp" class="w-full h-full object-cover" />
-
-          <!-- Gradient overlay -->
-          <div
-            class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
-
-          <!-- Text -->
-          <div class="absolute bottom-6 left-6 right-6">
-            <div class="text-[10px] tracking-[0.4em] uppercase text-gray-400 mb-2">
-              Precision Installation
-            </div>
-
-            <div class="font-display font-bold text-lg mb-2">Custom Cut & Wrapped Edges</div>
-
-            <p class="text-gray-300 text-xs leading-relaxed max-w-sm">
-              Every installation is precisely custom cut and fully wrapped around edges, delivering
-              a seamless finish and superior long-term durability.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- PPF Packages -->
-      <div class="col-span-2 mt-16 max-w-7xl mx-auto">
-        <!-- Title -->
-        <div class="text-center mb-12">
-          <h3 class="font-display font-bold text-3xl md:text-4xl mb-4">
-            Discover Our PPF Packages
-          </h3>
-          <p class="text-gray-400 text-sm md:text-base max-w-2xl mx-auto">
-            Every installation is tailored to your vehicle, featuring precision-cut film and fully
-            wrapped edges for a seamless, long-lasting finish.
+          <p class="text-gray-500 text-sm leading-relaxed">
+            We then move into polishing, protection, and final finishing — restoring gloss, depth,
+            and clarity while ensuring every surface, from paint to interior materials, is left in
+            pristine, like-new condition.
           </p>
         </div>
 
-        <!-- Packages Grid -->
-        <div class="grid md:grid-cols-2 gap-10">
-          <!-- FULL BODY -->
-          <div class="bg-black rounded-2xl overflow-hidden border border-white/5">
-            <div class="p-6">
-              <h4 class="font-display font-bold text-xl mb-2">FULL-BODY PPF</h4>
-              <div class="text-gray-400 text-sm mb-4">Complete Coverage</div>
+        <!-- BOTTOM: Images -->
+        <div class="grid md:grid-cols-2 gap-6">
+          <!-- Interior Detailing -->
+          <div class="relative h-[300px] md:h-[420px] rounded-2xl overflow-hidden group">
+            <img
+              src="/img/pages/detailing/detailing-interior.webp"
+              alt="interior-detailing"
+              class="w-full h-full object-cover" />
 
-              <p class="text-gray-300 text-sm mb-6">
-                Ultimate protection for your entire vehicle with maximum durability and flawless
-                appearance.
-              </p>
+            <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
 
-              <div class="space-y-2">
-                <div class="flex items-center gap-3">
-                  <div class="w-1.5 h-1.5 bg-[#0184FF] rounded-full"></div>
-                  <span class="text-sm text-gray-400">Front End Package +</span>
-                </div>
+            <div class="absolute bottom-6 left-6 right-6">
+              <div class="font-display font-bold text-lg mb-2">Interior Detailing</div>
 
-                <div class="flex items-center gap-3">
-                  <div class="w-1.5 h-1.5 bg-[#0184FF] rounded-full"></div>
-                  <span class="text-sm text-gray-400">Doors</span>
-                </div>
-
-                <div class="flex items-center gap-3">
-                  <div class="w-1.5 h-1.5 bg-[#0184FF] rounded-full"></div>
-                  <span class="text-sm text-gray-400">Quarter Panels</span>
-                </div>
-
-                <div class="flex items-center gap-3">
-                  <div class="w-1.5 h-1.5 bg-[#0184FF] rounded-full"></div>
-                  <span class="text-sm text-gray-400">Rocker Panels</span>
-                </div>
-
-                <div class="flex items-center gap-3">
-                  <div class="w-1.5 h-1.5 bg-[#0184FF] rounded-full"></div>
-                  <span class="text-sm text-gray-400">Roof</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Image -->
-            <div class="h-65">
-              <img src="img/pages/ppf/fullppf.webp" class="w-full h-full object-cover" />
-            </div>
-          </div>
-
-          <!-- FRONT END -->
-          <div class="bg-black rounded-2xl overflow-hidden border border-white/5">
-            <div class="p-6">
-              <h4 class="font-display font-bold text-xl mb-2">FRONT-END PPF</h4>
-              <div class="text-gray-400 text-sm mb-4">Front Coverage</div>
-
-              <p class="text-gray-300 text-sm mb-6">
-                Designed to protect the most exposed and high-impact areas of your vehicle.
-              </p>
-
-              <div class="space-y-2">
-                <div class="flex items-center gap-3">
-                  <div class="w-1.5 h-1.5 bg-[#0184FF] rounded-full"></div>
-                  <span class="text-sm text-gray-400">Front Bumper</span>
-                </div>
-
-                <div class="flex items-center gap-3">
-                  <div class="w-1.5 h-1.5 bg-[#0184FF] rounded-full"></div>
-                  <span class="text-sm text-gray-400">Fenders</span>
-                </div>
-
-                <div class="flex items-center gap-3">
-                  <div class="w-1.5 h-1.5 bg-[#0184FF] rounded-full"></div>
-                  <span class="text-sm text-gray-400">Mirror Caps</span>
-                </div>
-
-                <div class="flex items-center gap-3">
-                  <div class="w-1.5 h-1.5 bg-[#0184FF] rounded-full"></div>
-                  <span class="text-sm text-gray-400">Hood</span>
-                </div>
-
-                <div class="flex items-center gap-3">
-                  <div class="w-1.5 h-1.5 bg-[#0184FF] rounded-full"></div>
-                  <span class="text-sm text-gray-400">Headlights</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Image -->
-            <div class="h-65">
-              <img src="img/pages/ppf/frontppf.webp" class="w-full h-full object-cover" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Colored PPF Section -->
-    <section class="pt-20 pb-12 px-6 relative" id="color-ppf">
-      <div class="max-w-7xl mx-auto">
-        <!-- Small label -->
-        <div class="flex items-center gap-3 mb-4">
-          <div class="w-8 h-px bg-gray-600"></div>
-          <span class="text-xs tracking-[0.4em] uppercase text-gray-500">
-            Colored Paint Protection Film
-          </span>
-        </div>
-
-        <!-- Title -->
-        <h2 class="font-display font-bold text-4xl md:text-5xl mb-6">
-          What Is Colored Paint Protection Film?
-        </h2>
-
-        <!-- Description -->
-        <p class="text-gray-400 text-sm md:text-base leading-relaxed max-w-5xl mb-12">
-          Colored PPF merges the advanced protection of traditional clear film with the bold
-          aesthetics of vinyl wraps. It delivers long-lasting durability while allowing you to
-          transform the look of your vehicle. This modern solution is redefining automotive styling
-          — giving you the freedom to stand out without sacrificing protection.
-        </p>
-
-        <!-- Features -->
-        <div class="grid md:grid-cols-3 gap-8">
-          <!-- Feature 1 -->
-          <div class="ppf-card">
-            <div class="ppf-title-container">
-              <div class="ppf-dot"></div>
-              <h3 class="ppf-title">Self-Healing</h3>
-            </div>
-            <p class="ppf-text">
-              Minor scratches and swirl marks disappear with heat, keeping your vehicle’s finish
-              smooth and flawless over time.
-            </p>
-          </div>
-
-          <!-- Feature 2 -->
-          <div class="ppf-card">
-            <div class="ppf-title-container">
-              <div class="ppf-dot"></div>
-              <h3 class="ppf-title">Stain Resistant</h3>
-            </div>
-            <p class="ppf-text">
-              Resists stains and discoloration from road grime, contaminants, and everyday exposure,
-              maintaining a clean and vibrant appearance.
-            </p>
-          </div>
-
-          <!-- Feature 3 -->
-          <div class="ppf-card">
-            <div class="ppf-title-container">
-              <div class="ppf-dot"></div>
-              <h3 class="ppf-title">Advanced Durability</h3>
-            </div>
-            <p class="ppf-text">
-              Engineered to withstand harsh conditions, UV rays, and road debris, providing a
-              strong, long-lasting protective barrier.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- COLORS BLOCK -->
-      <div class="mt-16 max-w-7xl mx-auto">
-        <!-- Title -->
-        <h3 class="font-display font-bold text-2xl md:text-3xl mb-6">Explore Color Options</h3>
-
-        <div class="space-y-14">
-          <!-- GLOSS -->
-          <div class="group">
-            <div>
-              <div class="font-display font-bold text-lg">GLOSS</div>
-              <p class="text-gray-400 text-sm mt-1 max-w-5xl">
-                Deep, high-shine finish that enhances color richness and delivers a sleek
-                showroom-style appearance.
+              <p class="text-gray-300 text-xs leading-relaxed max-w-sm">
+                Thorough cleaning and restoration of all interior surfaces for a fresh, sanitized,
+                and refined environment.
               </p>
             </div>
-
-            <div class="grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-6 gap-x-4 gap-y-10 mt-6">
-              <img
-                src="img/colors/gloss/gloss1.webp"
-                class="w-full h-full object-cover rounded-xl" />
-              <img
-                src="img/colors/gloss/gloss2.webp"
-                class="w-full h-full object-cover rounded-xl" />
-              <img
-                src="img/colors/gloss/gloss3.webp"
-                class="w-full h-full object-cover rounded-xl" />
-              <img
-                src="img/colors/gloss/gloss4.webp"
-                class="w-full h-full object-cover rounded-xl" />
-              <img
-                src="img/colors/gloss/gloss5.webp"
-                class="w-full h-full object-cover rounded-xl" />
-              <img
-                src="img/colors/gloss/gloss6.webp"
-                class="w-full h-full object-cover rounded-xl" />
-              <img
-                src="img/colors/gloss/gloss7.webp"
-                class="w-full h-full object-cover rounded-xl" />
-              <img
-                src="img/colors/gloss/gloss8.webp"
-                class="w-full h-full object-cover rounded-xl" />
-              <img
-                src="img/colors/gloss/gloss9.webp"
-                class="w-full h-full object-cover rounded-xl" />
-              <img
-                src="img/colors/gloss/gloss10.webp"
-                class="w-full h-full object-cover rounded-xl" />
-              <img
-                src="img/colors/gloss/gloss11.webp"
-                class="w-full h-full object-cover rounded-xl" />
-              <img
-                src="img/colors/gloss/gloss12.webp"
-                class="w-full h-full object-cover rounded-xl" />
-              <img
-                src="img/colors/gloss/gloss13.webp"
-                class="w-full h-full object-cover rounded-xl" />
-              <img
-                src="img/colors/gloss/gloss14.webp"
-                class="w-full h-full object-cover rounded-xl" />
-              <img
-                src="img/colors/gloss/gloss15.webp"
-                class="w-full h-full object-cover rounded-xl" />
-              <img
-                src="img/colors/gloss/gloss16.webp"
-                class="w-full h-full object-cover rounded-xl" />
-              <img
-                src="img/colors/gloss/gloss17.webp"
-                class="w-full h-full object-cover rounded-xl" />
-              <img
-                src="img/colors/gloss/gloss18.webp"
-                class="w-full h-full object-cover rounded-xl" />
-              <img
-                src="img/colors/gloss/gloss19.webp"
-                class="w-full h-full object-cover rounded-xl" />
-              <img
-                src="img/colors/gloss/gloss20.webp"
-                class="w-full h-full object-cover rounded-xl" />
-              <img
-                src="img/colors/gloss/gloss21.webp"
-                class="w-full h-full object-cover rounded-xl" />
-              <img
-                src="img/colors/gloss/gloss22.webp"
-                class="w-full h-full object-cover rounded-xl" />
-              <img
-                src="img/colors/gloss/gloss23.webp"
-                class="w-full h-full object-cover rounded-xl" />
-              <img
-                src="img/colors/gloss/gloss24.webp"
-                class="w-full h-full object-cover rounded-xl" />
-            </div>
           </div>
 
-          <!-- GLOSS METALLIC -->
-          <div class="group">
-            <div>
-              <div class="font-display font-bold text-lg">GLOSS METALLIC</div>
-              <p class="text-gray-400 text-sm mt-1 max-w-5xl">
-                A rich gloss finish enhanced with metallic depth, creating a more dynamic and
-                premium visual effect under light.
+          <!-- Exterior Detailing -->
+          <div class="relative h-[300px] md:h-[420px] rounded-2xl overflow-hidden group">
+            <img
+              src="/img/pages/detailing/detailing-exterior.webp"
+              alt="exterior-detailing"
+              class="w-full h-full object-cover" />
+
+            <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+
+            <div class="absolute bottom-6 left-6 right-6">
+              <div class="font-display font-bold text-lg mb-2">Exterior Detailing</div>
+
+              <p class="text-gray-300 text-xs leading-relaxed max-w-sm">
+                Deep cleaning, decontamination, and paint refinement to restore gloss, clarity, and
+                overall appearance.
               </p>
-            </div>
-
-            <div class="grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-6 gap-x-4 gap-y-10 mt-6">
-              <img
-                src="img/colors/metallic/metallic1.webp"
-                class="w-full h-full object-cover rounded-xl" />
-              <img
-                src="img/colors/metallic/metallic2.webp"
-                class="w-full h-full object-cover rounded-xl" />
-              <img
-                src="img/colors/metallic/metallic3.webp"
-                class="w-full h-full object-cover rounded-xl" />
-              <img
-                src="img/colors/metallic/metallic4.webp"
-                class="w-full h-full object-cover rounded-xl" />
-              <img
-                src="img/colors/metallic/metallic5.webp"
-                class="w-full h-full object-cover rounded-xl" />
-              <img
-                src="img/colors/metallic/metallic6.webp"
-                class="w-full h-full object-cover rounded-xl" />
-              <img
-                src="img/colors/metallic/metallic7.webp"
-                class="w-full h-full object-cover rounded-xl" />
-              <img
-                src="img/colors/metallic/metallic8.webp"
-                class="w-full h-full object-cover rounded-xl" />
-              <img
-                src="img/colors/metallic/metallic9.webp"
-                class="w-full h-full object-cover rounded-xl" />
-              <img
-                src="img/colors/metallic/metallic10.webp"
-                class="w-full h-full object-cover rounded-xl" />
-              <img
-                src="img/colors/metallic/metallic11.webp"
-                class="w-full h-full object-cover rounded-xl" />
-              <img
-                src="img/colors/metallic/metallic12.webp"
-                class="w-full h-full object-cover rounded-xl" />
-              <img
-                src="img/colors/metallic/metallic13.webp"
-                class="w-full h-full object-cover rounded-xl" />
-              <img
-                src="img/colors/metallic/metallic14.webp"
-                class="w-full h-full object-cover rounded-xl" />
-              <img
-                src="img/colors/metallic/metallic15.webp"
-                class="w-full h-full object-cover rounded-xl" />
-              <img
-                src="img/colors/metallic/metallic16.webp"
-                class="w-full h-full object-cover rounded-xl" />
-              <img
-                src="img/colors/metallic/metallic17.webp"
-                class="w-full h-full object-cover rounded-xl" />
-              <img
-                src="img/colors/metallic/metallic18.webp"
-                class="w-full h-full object-cover rounded-xl" />
-              <img
-                src="img/colors/metallic/metallic19.webp"
-                class="w-full h-full object-cover rounded-xl" />
-              <img
-                src="img/colors/metallic/metallic20.webp"
-                class="w-full h-full object-cover rounded-xl" />
-              <img
-                src="img/colors/metallic/metallic21.webp"
-                class="w-full h-full object-cover rounded-xl" />
-              <img
-                src="img/colors/metallic/metallic22.webp"
-                class="w-full h-full object-cover rounded-xl" />
-              <img
-                src="img/colors/metallic/metallic23.webp"
-                class="w-full h-full object-cover rounded-xl" />
-              <img
-                src="img/colors/metallic/metallic24.webp"
-                class="w-full h-full object-cover rounded-xl" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Matte PPF Section -->
-    <section class="pt-20 pb-12 px-6 relative" id="matte-ppf">
-      <div class="max-w-7xl mx-auto">
-        <!-- Small label -->
-        <div class="flex items-center gap-3 mb-4">
-          <div class="w-8 h-px bg-gray-600"></div>
-          <span class="text-xs tracking-[0.4em] uppercase text-gray-500">
-            Matte Paint Protection Film
-          </span>
-        </div>
-
-        <!-- Title -->
-        <h2 class="font-display font-bold text-4xl md:text-5xl mb-6">
-          What Is Matte Paint Protection Film (PPF)?
-        </h2>
-
-        <!-- Description -->
-        <p class="text-gray-400 text-sm md:text-base leading-relaxed max-w-5xl mb-12">
-          Matte Paint Protection Film (PPF) is an advanced polyurethane layer designed to shield
-          your vehicle’s paint while delivering a refined satin finish. It offers exceptional
-          resistance against scratches, rock chips, and environmental damage, all while enhancing
-          the overall appearance of your car with a smooth, modern look. At Ston Auto, we work with
-          a curated selection of premium PPF brands to ensure top-tier protection, durability, and
-          flawless results.
-        </p>
-
-        <!-- Features -->
-        <div class="grid md:grid-cols-3 gap-8">
-          <!-- Feature 1 -->
-          <div class="ppf-card">
-            <div class="ppf-title-container">
-              <div class="ppf-dot"></div>
-              <h3 class="ppf-title">Self-Healing</h3>
-            </div>
-            <p class="ppf-text">
-              Minor scratches and swirl marks disappear with heat, keeping your vehicle’s finish
-              smooth and flawless over time.
-            </p>
-          </div>
-
-          <!-- Feature 2 -->
-          <div class="ppf-card">
-            <div class="ppf-title-container">
-              <div class="ppf-dot"></div>
-              <h3 class="ppf-title">Stain Resistant</h3>
-            </div>
-            <p class="ppf-text">
-              Resists stains and discoloration from road grime, contaminants, and everyday exposure,
-              maintaining a clean and vibrant appearance.
-            </p>
-          </div>
-
-          <!-- Feature 3 -->
-          <div class="ppf-card">
-            <div class="ppf-title-container">
-              <div class="ppf-dot"></div>
-              <h3 class="ppf-title">Matte Finish</h3>
-            </div>
-            <p class="ppf-text">
-              A refined low-sheen surface that softens reflections, delivering a sophisticated,
-              understated look.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- COLORS BLOCK -->
-      <div class="mt-16 max-w-7xl mx-auto">
-        <!-- Title -->
-        <h3 class="font-display font-bold text-2xl md:text-3xl mb-6">Explore Color Options</h3>
-
-        <div class="space-y-14">
-          <!-- Satin -->
-          <div class="group">
-            <div>
-              <div class="font-display font-bold text-lg">Satin / Matte</div>
-              <p class="text-gray-400 text-sm mt-1 max-w-5xl">
-                A refined satin finish that diffuses light, delivering a sleek, understated and
-                contemporary appearance.
-              </p>
-            </div>
-
-            <div class="grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-6 gap-x-4 gap-y-10 mt-6">
-              <img
-                src="img/colors/satin/satin1.webp"
-                class="w-full h-full object-cover rounded-xl" />
-              <img
-                src="img/colors/satin/satin2.webp"
-                class="w-full h-full object-cover rounded-xl" />
-              <img
-                src="img/colors/satin/satin3.webp"
-                class="w-full h-full object-cover rounded-xl" />
-              <img
-                src="img/colors/satin/satin4.webp"
-                class="w-full h-full object-cover rounded-xl" />
-              <img
-                src="img/colors/satin/satin5.webp"
-                class="w-full h-full object-cover rounded-xl" />
-              <img
-                src="img/colors/satin/satin6.webp"
-                class="w-full h-full object-cover rounded-xl" />
-              <img
-                src="img/colors/satin/satin7.webp"
-                class="w-full h-full object-cover rounded-xl" />
-              <img
-                src="img/colors/satin/satin8.webp"
-                class="w-full h-full object-cover rounded-xl" />
-              <img
-                src="img/colors/satin/satin9.webp"
-                class="w-full h-full object-cover rounded-xl" />
-              <img
-                src="img/colors/satin/satin10.webp"
-                class="w-full h-full object-cover rounded-xl" />
-              <img
-                src="img/colors/satin/satin11.webp"
-                class="w-full h-full object-cover rounded-xl" />
-              <img
-                src="img/colors/satin/satin12.webp"
-                class="w-full h-full object-cover rounded-xl" />
-              <img
-                src="img/colors/satin/satin13.webp"
-                class="w-full h-full object-cover rounded-xl" />
-              <img
-                src="img/colors/satin/satin14.webp"
-                class="w-full h-full object-cover rounded-xl" />
-              <img
-                src="img/colors/satin/satin15.webp"
-                class="w-full h-full object-cover rounded-xl" />
-              <img
-                src="img/colors/satin/satin16.webp"
-                class="w-full h-full object-cover rounded-xl" />
-              <img
-                src="img/colors/satin/satin17.webp"
-                class="w-full h-full object-cover rounded-xl" />
-              <img
-                src="img/colors/satin/satin18.webp"
-                class="w-full h-full object-cover rounded-xl" />
             </div>
           </div>
         </div>
@@ -750,7 +301,7 @@
         <div class="relative z-10">
           <!-- logo -->
           <div class="flex items-center justify-center mb-4">
-            <img src="img/ston_logo.webp" alt="ston-logo" class="w-auto h-14 object-contain" />
+            <img src="/img/ston_logo.webp" alt="ston-logo" class="w-auto h-14 object-contain" />
           </div>
 
           <!-- text -->
@@ -798,10 +349,10 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <!-- Card -->
           <a
-            href="paintprotectionfilm.html"
+            href="/ppf"
             class="service-card relative rounded-3xl overflow-hidden group cursor-pointer h-[300px] sm:h-[400px] md:h-[300px]">
             <img
-              src="img/services/ppf-service.webp"
+              src="/img/services/ppf-service.webp"
               alt="Paint Protection"
               class="service-img absolute inset-0 w-full h-full object-cover" />
             <div
@@ -816,10 +367,10 @@
 
           <!-- Card -->
           <a
-            href="vinyl-wraps.html"
+            href="/vinyl-wraps"
             class="service-card relative rounded-3xl overflow-hidden group cursor-pointer h-[300px] sm:h-[400px] md:h-[300px]">
             <img
-              src="img/services/wrap-service.webp"
+              src="/img/services/wrap-service.webp"
               alt="Vinyl Wraps"
               class="service-img absolute inset-0 w-full h-full object-cover vinylwrap-img" />
             <div
@@ -834,10 +385,10 @@
 
           <!-- Card -->
           <a
-            href="window-tint.html"
+            href="/window-tint"
             class="service-card relative rounded-3xl overflow-hidden group cursor-pointer h-[300px] sm:h-[400px] md:h-[300px]">
             <img
-              src="img/services/window-service.webp"
+              src="/img/services/window-service.webp"
               alt="Ceramic Tint"
               class="service-img absolute inset-0 w-full h-full object-cover" />
             <div
@@ -852,10 +403,10 @@
 
           <!-- Card -->
           <a
-            href="ceramic-coating.html"
+            href="/ceramic-coating"
             class="service-card relative rounded-3xl overflow-hidden group cursor-pointer h-[300px] sm:h-[400px] md:h-[300px]">
             <img
-              src="img/services/ceramic-service.webp"
+              src="/img/services/ceramic-service.webp"
               alt="Ceramic Coating"
               class="service-img absolute inset-0 w-full h-full object-cover" />
             <div
@@ -871,10 +422,10 @@
 
           <!-- Card -->
           <a
-            href="powder-coating.html"
+            href="/powder-coating"
             class="service-card relative rounded-3xl overflow-hidden group cursor-pointer h-[300px] sm:h-[400px] md:h-[300px]">
             <img
-              src="img/services/powder-service.webp"
+              src="/img/services/powder-service.webp"
               alt="Powder coating"
               class="service-img absolute inset-0 w-full h-full object-cover" />
             <div
@@ -889,10 +440,10 @@
 
           <!-- Card -->
           <a
-            href="detailing.html"
+            href="/detailing"
             class="service-card relative rounded-3xl overflow-hidden group cursor-pointer h-[300px] sm:h-[400px] md:h-[300px]">
             <img
-              src="img/services/detailing-service.webp"
+              src="/img/services/detailing-service.webp"
               alt="Detailing"
               class="service-img absolute inset-0 w-full h-full object-cover" />
             <div
@@ -1047,7 +598,7 @@
           </div>
 
           <a
-            href="gallery.html"
+            href="/gallery"
             class="text-sm text-white hover:text-[#0184FF] transition-colors inline-block gap-2 px-4 py-2">
             View All Projects
           </a>
@@ -1058,42 +609,42 @@
             <!-- Slide -->
             <div class="swiper-slide">
               <div class="group relative rounded-2xl overflow-hidden cursor-pointer">
-                <img src="img/gallery/gal1.webp" class="slide-image" />
+                <img src="/img/gallery/gal1.webp" class="slide-image" />
               </div>
             </div>
 
             <!-- Slide -->
             <div class="swiper-slide">
               <div class="group relative rounded-2xl overflow-hidden cursor-pointer">
-                <img src="img/gallery/gal2.webp" class="slide-image" />
+                <img src="/img/gallery/gal2.webp" class="slide-image" />
               </div>
             </div>
 
             <!-- Slide -->
             <div class="swiper-slide">
               <div class="group relative rounded-2xl overflow-hidden cursor-pointer">
-                <img src="img/gallery/gal3.webp" class="slide-image" />
+                <img src="/img/gallery/gal3.webp" class="slide-image" />
               </div>
             </div>
 
             <!-- Slide -->
             <div class="swiper-slide">
               <div class="group relative rounded-2xl overflow-hidden cursor-pointer">
-                <img src="img/gallery/gal4.webp" class="slide-image" />
+                <img src="/img/gallery/gal4.webp" class="slide-image" />
               </div>
             </div>
 
             <!-- Slide -->
             <div class="swiper-slide">
               <div class="group relative rounded-2xl overflow-hidden cursor-pointer">
-                <img src="img/gallery/gal5.webp" class="slide-image" />
+                <img src="/img/gallery/gal5.webp" class="slide-image" />
               </div>
             </div>
 
             <!-- Slide -->
             <div class="swiper-slide">
               <div class="group relative rounded-2xl overflow-hidden cursor-pointer">
-                <img src="img/gallery/gal6.webp" class="slide-image" />
+                <img src="/img/gallery/gal6.webp" class="slide-image" />
               </div>
             </div>
           </div>
@@ -1278,9 +829,9 @@
       <div class="max-w-7xl mx-auto">
         <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16">
           <div class="">
-            <a href="index.html" class="inline-block mb-2">
+            <a href="/" class="inline-block mb-2">
               <img
-                src="img/ston-logo-footer.webp"
+                src="/img/ston-logo-footer.webp"
                 alt="ston-logo"
                 class="h-6 md:h-10 w-auto object-contain" />
             </a>
@@ -1309,22 +860,22 @@
             <h4 class="font-display font-medium text-sm mb-5 tracking-wider">Services</h4>
             <ul class="space-y-3 text-xs text-gray-500">
               <li>
-                <a href="paintprotectionfilm.html" class="footer-link">Paint Protection</a>
+                <a href="/ppf" class="footer-link">Paint Protection</a>
               </li>
               <li>
-                <a href="vinyl-wraps.html" class="footer-link">Vinyl Wraps</a>
+                <a href="/vinyl-wraps" class="footer-link">Vinyl Wraps</a>
               </li>
               <li>
-                <a href="window-tint.html" class="footer-link">Window Tint</a>
+                <a href="/window-tint" class="footer-link">Window Tint</a>
               </li>
               <li>
-                <a href="ceramic-coating.html" class="footer-link">Ceramic Coating</a>
+                <a href="/ceramic-coating" class="footer-link">Ceramic Coating</a>
               </li>
               <li>
-                <a href="powder-coating.html" class="footer-link">Powder Coating</a>
+                <a href="/powder-coating" class="footer-link">Powder Coating</a>
               </li>
               <li>
-                <a href="detailing.html" class="footer-link">Detailing</a>
+                <a href="/detailing" class="footer-link">Detailing</a>
               </li>
             </ul>
           </div>
@@ -1333,10 +884,10 @@
             <h4 class="font-display font-medium text-sm mb-5 tracking-wider">Company</h4>
             <ul class="space-y-3 text-xs text-gray-500">
               <li>
-                <a href="about.html" class="footer-link">About Us</a>
+                <a href="/about" class="footer-link">About Us</a>
               </li>
               <li>
-                <a href="gallery.html" class="footer-link">Gallery</a>
+                <a href="/gallery" class="footer-link">Gallery</a>
               </li>
             </ul>
           </div>
@@ -1363,10 +914,10 @@
             © 2026 Ston Auto Studio. All Rights Reserved.
           </div>
           <div class="flex gap-6 text-[10px] text-gray-600">
-            <a href="privacy-policy.html" class="hover:text-gray-400 transition-colors"
+            <a href="/privacy-policy" class="hover:text-gray-400 transition-colors"
               >Privacy Policy</a
             >
-            <a href="terms-of-service.html" class="hover:text-gray-400 transition-colors"
+            <a href="/terms-of-service" class="hover:text-gray-400 transition-colors"
               >Terms of Service</a
             >
           </div>
